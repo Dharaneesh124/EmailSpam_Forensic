@@ -1,0 +1,6 @@
+{
+  "name": "EmailForensics AI - Threat Detection & Origin Intelligence",
+  "description": "Enterprise AI-powered email threat detection, blockchain forensic ledger, cryptographic chain of custody, protocol forensics, and autonomous SOAR defense platform.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
