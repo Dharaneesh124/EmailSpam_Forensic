@@ -1,6 +1,6 @@
 {
-  "name": "EmailForensics AI - Threat Detection & Origin Intelligence",
-  "description": "Enterprise AI-powered email threat detection, blockchain forensic ledger, cryptographic chain of custody, protocol forensics, and autonomous SOAR defense platform.",
+  "name": "Evi-Mail - Threat Detection & Origin Intelligence",
+  "description": "Streamlined email interface featuring forensic threat intelligence, spam attack origin geolocation mapping, protocol forensics, and blockchain proof of custody.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

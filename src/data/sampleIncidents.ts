@@ -7,7 +7,7 @@ export const SAMPLE_INCIDENTS: EmailIncident[] = [
     subject: 'URGENT: Confidential Project Titan Acquisition Settlement - Wire Transfer Authorization',
     senderDisplay: 'David Sterling - Chief Executive Officer',
     senderAddress: 'david.sterling@acme-enterprises.corp-settlement.com',
-    recipientAddress: 'cfo-office@acme-global.com',
+    recipientAddress: 'dharaneeshsk2007@gmail.com',
     receivedAt: '2026-09-04T22:45:12Z',
     threatSeverity: 'critical',
     fraudScore: 97,
@@ -341,7 +341,7 @@ X-Mailer: Microsoft Outlook 16.0 (Forged Custom Mailer)`,
     subject: 'Action Required: Microsoft 365 Security Notice - Multiple Failed MFA Logins Detected',
     senderDisplay: 'Microsoft 365 Identity Security Team',
     senderAddress: 'account-security@login-microsoft-portal.online',
-    recipientAddress: 'devops-lead@acme-global.com',
+    recipientAddress: 'dharaneeshsk2007@gmail.com',
     receivedAt: '2026-09-04T21:12:04Z',
     threatSeverity: 'high',
     fraudScore: 89,
@@ -603,7 +603,7 @@ Content-Type: text/html; charset=UTF-8`,
     subject: 'RE: Updated Remittance Advice & Corrected Tax Invoice #INV-2026-90412',
     senderDisplay: 'Sarah Jenkins | Apex Logistics Global Accounting',
     senderAddress: 's.jenkins@apex-logistics-corp.com',
-    recipientAddress: 'accounts-payable@acme-global.com',
+    recipientAddress: 'dharaneeshsk2007@gmail.com',
     receivedAt: '2026-09-04T18:30:19Z',
     threatSeverity: 'critical',
     fraudScore: 94,
@@ -880,7 +880,7 @@ Message-ID: <CABp=mX7_9401827419a@apex-logistics-corp.com>`,
     subject: 'CONFIDENTIAL: Q4 Executive Performance Appraisal & Discretionary Bonus Allocation Matrix',
     senderDisplay: 'Human Resources Compensation Board',
     senderAddress: 'hr-compensation@internal-acme-global.com',
-    recipientAddress: 'all-directors@acme-global.com',
+    recipientAddress: 'dharaneeshsk2007@gmail.com',
     receivedAt: '2026-09-04T16:18:33Z',
     threatSeverity: 'high',
     fraudScore: 91,
@@ -1091,7 +1091,7 @@ Message-ID: <00192837.20260904@internal-acme-global.com>`,
     subject: 'Amazon Web Services Invoice #AWS-892147101 - Payment Processed Successfully',
     senderDisplay: 'Amazon Web Services Billing',
     senderAddress: 'no-reply-aws@amazon.com',
-    recipientAddress: 'cloud-billing@acme-global.com',
+    recipientAddress: 'dharaneeshsk2007@gmail.com',
     receivedAt: '2026-09-04T14:02:11Z',
     threatSeverity: 'benign',
     fraudScore: 4,
@@ -1275,5 +1275,341 @@ Message-ID: <0100018f3a92182-c9182390-amazon.com>`,
       gasUsed: 12000,
       proofAlgorithm: 'SHA-256 Merkle Proof'
     }
+  },
+  {
+    id: 'inc-2026-8806',
+    caseNumber: 'CASE-BENIGN-0987',
+    subject: 'Security Checkup Completed: Your Google Account is protected',
+    senderDisplay: 'Google Security Team',
+    senderAddress: 'no-reply@accounts.google.com',
+    recipientAddress: 'dharaneeshsk2007@gmail.com',
+    receivedAt: '2026-09-04T11:15:40Z',
+    threatSeverity: 'benign',
+    fraudScore: 2,
+    classification: 'Legitimate',
+    status: 'released',
+    bodyText: `Hi Dharaneesh,
+
+Your Google Account Security Checkup was completed successfully. 
+
+Current Security Status:
+- 2-Step Verification: Active (Google Authenticator & Prompt)
+- Trusted Devices: 2 devices verified
+- Third-party Apps with Access: Audited and verified
+- Recent Security Events: No suspicious activity detected in the last 28 days
+
+You do not need to take any action. Your account remains protected by Google's multi-layered defense and advanced automated phishing protections.
+
+Visit your Google Account settings anytime to review your security recommendations:
+https://myaccount.google.com/security-checkup
+
+The Google Accounts Team`,
+    rawHeaders: `Received: from mail-wm1-f67.google.com (mail-wm1-f67.google.com [209.85.128.67])
+    by mx.google.com with ESMTPS id o18293710293
+    for <dharaneeshsk2007@gmail.com>; Fri, 04 Sep 2026 11:15:40 +0000 (UTC)
+Authentication-Results: mx.google.com;
+    dkim=pass header.d=accounts.google.com;
+    spf=pass (sender IP 209.85.128.67 is permitted by _spf.google.com);
+    dmarc=pass (p=reject) header.from=accounts.google.com
+From: "Google Security Team" <no-reply@accounts.google.com>
+To: <dharaneeshsk2007@gmail.com>
+Subject: Security Checkup Completed: Your Google Account is protected
+Date: Fri, 04 Sep 2026 11:15:35 +0000
+Message-ID: <google-sec-check-202609041115@accounts.google.com>`,
+    sha256: '3f7c9e1029384710293847102938471029384710293847102938471029384711',
+    sha1: '9928172635481920394857162534819203948571',
+    md5: '77162534819203948571625348192039',
+    protocols: {
+      spf: {
+        status: 'pass',
+        domain: 'accounts.google.com',
+        clientIp: '209.85.128.67',
+        record: 'v=spf1 include:_spf.google.com ~all',
+        aligned: true,
+        explanation: 'SPF validated against Google corporate outbound relay cluster.'
+      },
+      dkim: {
+        status: 'pass',
+        domain: 'accounts.google.com',
+        selector: '20230601',
+        signatureHeaderValid: true,
+        bodyHashValid: true,
+        aligned: true,
+        explanation: 'Cryptographic DKIM signature matches Google DNS key.'
+      },
+      dmarc: {
+        status: 'pass',
+        policy: 'reject',
+        alignment: 'aligned',
+        disposition: 'pass',
+        explanation: 'DMARC alignment verified.'
+      },
+      returnPathMatch: true,
+      returnPath: '3f7c-bounces@accounts.google.com',
+      fromHeader: 'no-reply@accounts.google.com',
+      replyToHeader: 'no-reply@accounts.google.com',
+      replyToMismatch: false,
+      messageIdAnomaly: false,
+      messageId: '<google-sec-check-202609041115@accounts.google.com>',
+      tlsVersion: 'TLSv1.3',
+      cipherSuite: 'TLS_AES_256_GCM_SHA384',
+      forgedSenderSuspected: false
+    },
+    relayHops: [
+      {
+        hopNumber: 1,
+        fromHost: 'mail-wm1-f67.google.com',
+        fromIP: '209.85.128.67',
+        byHost: 'mx.google.com',
+        protocol: 'ESMTPS',
+        timestamp: '2026-09-04T11:15:40Z',
+        delayMs: 250,
+        isOriginating: true,
+        isAnomalous: false,
+        geo: {
+          ip: '209.85.128.67',
+          country: 'United States',
+          countryCode: 'US',
+          city: 'Mountain View',
+          region: 'California',
+          lat: 37.422,
+          lng: -122.0841,
+          isp: 'Google LLC',
+          asn: 'AS15169 GOOGLE',
+          org: 'Google Infrastructure Services',
+          isTor: false,
+          isVpn: false,
+          isProxy: false,
+          isCloudHosting: true,
+          threatScore: 1
+        }
+      }
+    ],
+    originatingGeo: {
+      ip: '209.85.128.67',
+      country: 'United States',
+      countryCode: 'US',
+      city: 'Mountain View',
+      region: 'California',
+      lat: 37.422,
+      lng: -122.0841,
+      isp: 'Google LLC',
+      asn: 'AS15169 GOOGLE',
+      org: 'Google Infrastructure Services',
+      isTor: false,
+      isVpn: false,
+      isProxy: false,
+      isCloudHosting: true,
+      threatScore: 1
+    },
+    domainIntel: {
+      domain: 'accounts.google.com',
+      registrar: 'MarkMonitor Inc.',
+      creationDate: '1997-09-15T04:00:00Z',
+      ageDays: 10580,
+      expiryDate: '2028-09-13T04:00:00Z',
+      nameServers: ['ns1.google.com', 'ns2.google.com'],
+      mxRecords: ['10 smtp.google.com'],
+      threatReputationScore: 0,
+      isLookalike: false,
+      punycode: false,
+      knownMaliciousHistory: false
+    },
+    urls: [],
+    attachments: [],
+    nlpAnalysis: {
+      urgencyScore: 5,
+      authorityImpersonationScore: 0,
+      financialCoercionScore: 0,
+      fearPressureScore: 0,
+      detectedCues: ['Official security audit notification', 'Verified cryptographic signatures']
+    },
+    attribution: {
+      category: 'Compromised Account',
+      confidenceScore: 99,
+      probableActorOrSyndicate: 'Google Account Authentication Service',
+      campaignCluster: 'GOOGLE-SECURITY-CHECKUP',
+      reasoning: 'Authentic cryptographic signatures from Google LLC.',
+      mitreAttackTechniques: [],
+      actorOriginEstimate: 'Mountain View, CA, USA'
+    },
+    chainOfCustody: [
+      {
+        id: 'coc-51',
+        timestamp: '2026-09-04T11:15:40Z',
+        actor: 'Google Inbound MX',
+        action: 'Clean Ingestion & DKIM Verification',
+        details: 'Passed all SPF, DKIM, and DMARC alignment checks cleanly.',
+        verificationHash: '3f7c9e10293847102938471029384710293847102938471029384711'
+      }
+    ],
+    mitigationHistory: []
+  },
+  {
+    id: 'inc-2026-8807',
+    caseNumber: 'CASE-BENIGN-0988',
+    subject: '[GitHub] Dependabot merged pull request #42 (Security patch in production applet)',
+    senderDisplay: 'GitHub Notifications',
+    senderAddress: 'notifications@github.com',
+    recipientAddress: 'dharaneeshsk2007@gmail.com',
+    receivedAt: '2026-09-04T08:30:15Z',
+    threatSeverity: 'benign',
+    fraudScore: 3,
+    classification: 'Legitimate',
+    status: 'released',
+    bodyText: `Hello Dharaneesh,
+
+Dependabot has successfully submitted and merged pull request #42 in repository:
+dharaneesh/email-defense-engine:
+
+"Bump dependencies: Update Vite and React bindings to latest security patch versions"
+
+All 18 continuous integration checks passed with 100% test coverage. No vulnerabilities remain unresolved.
+
+View pull request details:
+https://github.com/dharaneesh/email-defense-engine/pull/42
+
+Best,
+The GitHub Team`,
+    rawHeaders: `Received: from smtp.github.com (smtp.github.com [140.82.112.21])
+    by mx.google.com with ESMTPS id gh18923019
+    for <dharaneeshsk2007@gmail.com>; Fri, 04 Sep 2026 08:30:15 +0000 (UTC)
+Authentication-Results: mx.google.com;
+    dkim=pass header.d=github.com;
+    spf=pass (sender IP 140.82.112.21 is permitted by _spf.github.com);
+    dmarc=pass (p=reject) header.from=github.com
+From: "GitHub Notifications" <notifications@github.com>
+To: <dharaneeshsk2007@gmail.com>
+Subject: [GitHub] Dependabot merged pull request #42 (Security patch in production applet)
+Date: Fri, 04 Sep 2026 08:30:10 +0000
+Message-ID: <github/pull/42/merged@github.com>`,
+    sha256: '4a8b7c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b',
+    sha1: '1234567890abcdef1234567890abcdef12345678',
+    md5: 'abcdef1234567890abcdef1234567890',
+    protocols: {
+      spf: {
+        status: 'pass',
+        domain: 'github.com',
+        clientIp: '140.82.112.21',
+        record: 'v=spf1 include:_spf.github.com ~all',
+        aligned: true,
+        explanation: 'SPF verified from official GitHub relay cluster.'
+      },
+      dkim: {
+        status: 'pass',
+        domain: 'github.com',
+        selector: 's20210415',
+        signatureHeaderValid: true,
+        bodyHashValid: true,
+        aligned: true,
+        explanation: 'DKIM signature valid and cryptographic hash matches.'
+      },
+      dmarc: {
+        status: 'pass',
+        policy: 'reject',
+        alignment: 'aligned',
+        disposition: 'pass',
+        explanation: 'Strict DMARC policy passed.'
+      },
+      returnPathMatch: true,
+      returnPath: 'noreply@github.com',
+      fromHeader: 'notifications@github.com',
+      replyToHeader: 'notifications@github.com',
+      replyToMismatch: false,
+      messageIdAnomaly: false,
+      messageId: '<github/pull/42/merged@github.com>',
+      tlsVersion: 'TLSv1.3',
+      cipherSuite: 'TLS_AES_256_GCM_SHA384',
+      forgedSenderSuspected: false
+    },
+    relayHops: [
+      {
+        hopNumber: 1,
+        fromHost: 'smtp.github.com',
+        fromIP: '140.82.112.21',
+        byHost: 'mx.google.com',
+        protocol: 'ESMTPS',
+        timestamp: '2026-09-04T08:30:15Z',
+        delayMs: 410,
+        isOriginating: true,
+        isAnomalous: false,
+        geo: {
+          ip: '140.82.112.21',
+          country: 'United States',
+          countryCode: 'US',
+          city: 'San Francisco',
+          region: 'California',
+          lat: 37.7749,
+          lng: -122.4194,
+          isp: 'GitHub, Inc.',
+          asn: 'AS36459 GITHUB',
+          org: 'GitHub Production Infrastructure',
+          isTor: false,
+          isVpn: false,
+          isProxy: false,
+          isCloudHosting: true,
+          threatScore: 2
+        }
+      }
+    ],
+    originatingGeo: {
+      ip: '140.82.112.21',
+      country: 'United States',
+      countryCode: 'US',
+      city: 'San Francisco',
+      region: 'California',
+      lat: 37.7749,
+      lng: -122.4194,
+      isp: 'GitHub, Inc.',
+      asn: 'AS36459 GITHUB',
+      org: 'GitHub Production Infrastructure',
+      isTor: false,
+      isVpn: false,
+      isProxy: false,
+      isCloudHosting: true,
+      threatScore: 2
+    },
+    domainIntel: {
+      domain: 'github.com',
+      registrar: 'MarkMonitor Inc.',
+      creationDate: '2007-10-09T18:20:50Z',
+      ageDays: 6908,
+      expiryDate: '2028-10-09T18:20:50Z',
+      nameServers: ['dns1.p08.nsone.net', 'dns2.p08.nsone.net'],
+      mxRecords: ['10 smtp.github.com'],
+      threatReputationScore: 1,
+      isLookalike: false,
+      punycode: false,
+      knownMaliciousHistory: false
+    },
+    urls: [],
+    attachments: [],
+    nlpAnalysis: {
+      urgencyScore: 8,
+      authorityImpersonationScore: 0,
+      financialCoercionScore: 0,
+      fearPressureScore: 0,
+      detectedCues: ['Automated CI/CD deployment notice', 'Authentic GitHub cryptographic signatures']
+    },
+    attribution: {
+      category: 'Compromised Account',
+      confidenceScore: 99,
+      probableActorOrSyndicate: 'GitHub Notification Engine',
+      campaignCluster: 'GITHUB-NOTIFICATIONS',
+      reasoning: 'Authentic cryptographic signatures from GitHub Inc.',
+      mitreAttackTechniques: [],
+      actorOriginEstimate: 'San Francisco, CA, USA'
+    },
+    chainOfCustody: [
+      {
+        id: 'coc-61',
+        timestamp: '2026-09-04T08:30:15Z',
+        actor: 'Google Inbound MX',
+        action: 'Clean Ingestion & Verification',
+        details: 'Passed all SPF, DKIM, and DMARC alignment checks cleanly.',
+        verificationHash: '4a8b7c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b'
+      }
+    ],
+    mitigationHistory: []
   }
 ];
